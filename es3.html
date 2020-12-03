@@ -1,29 +1,50 @@
 <html>
     <head>
-        <title>Es2 Training</title>
+        <title>JSes3 Training</title>
     </head>
     <body id = "body1">
-        <h1>Es3</h1>
+        <h1>Es3 - Calcolatrice</h1>
+        <input type="number" id = "casella"></input>
+        <input type="number" id = "casella2"></input><br><br>
+        <button id = "+">+</button>
+        <button id = "-">-</button>
+        <button id = "*">x</button>
+        <button id = "/">/</button>
+        <span id="span1"></span>
 
-        <input type="number" id = "casella1"></input>
-        <input type="number" id = "casella2"></input>
+        <p id = "risultato">il risultato è: </p>
 
         <script src = "https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
         <script>
-            var button1 = $("<button>+</button>");
-            $("body").append(button1); 
-            var somma = function(){
-                var n1 = $("#casella1").val();
-                console.log("n1: ", n1);
-                var n2 = $("#casella2").val();
-                console.log("n2: ", n2);
-                var operazione = n1+n2;
-                $("<h3>Il risultato è: </h3>").append(operazione);
-            }
-            button1.on("click", somma);
-            
-            console.log
+            /*var somma=$("+");
+            var sottrazione=$("-");
+            var moltiplicazione=$("*");
+            var divisione=$("/");
+
+            somma.on("click", function(){
+                var n1 = parseInt($("casella").val());
+                console.log(n1);
+                var n2 = parseInt($("casella2").val());
+                console.log(n2);
+                var risultato = $("risultato").html(n1+n2);
+            });
+
+            sottrazione.on("click", function(){
+                var n1 = parseInt($("casella").val());
+                console.log(n1);
+                var n2 = parseInt($("casella2").val());
+                console.log(n2);
+                var risultato = $("risultato").html(n1*n2);
+            });
+
+            */
+
+            $("+")
+
+
+            function calcola
         </script>
+        
+        
     </body>
 </html>

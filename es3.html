@@ -56,9 +56,26 @@
             risultato = n1 * n2;
             break;
         }
-        $("#span1").html(risultato);
+        $("#tabella").append("<tr><td>"+n1+"</td><td>"+segno+"</td><td>"+n2+"</td><td>"+risultato+"</td></tr>");
       }
+
+      
       //var isco = $("body").append($("<h3>wow</h3>"));
     </script>
+
+    <br><br>
+    <table id="tabella">
+        <tr><td>Primo Numero </td><td> Operatore </td><td> Secondo Numero </td><td> Risultato </td></tr>
+    </table>
+   
+   <style>
+        table {
+        border-collapse:collapse
+        }
+        td, th {
+        border:1px solid #ddd;
+        padding:8px;
+        }
+    </style>
   </body>
 </html>
